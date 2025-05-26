@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Tagesschrift&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Age Calculator</h1>
+      <form id="ageForm">
+        <label for="birthDate" id="enter" aria-placeholder="enter date"
+          >Enter your Birth Date:</label
+        >
+        <div class="input">
+          <label for="birthDate"> <i class="fa-solid fa-calendar"></i></label>
+          <input type="date" id="birthDate" name="birthDate" required />
+        </div>
+        <button type="button" class="btn" onclick="calculateAge()">
+          Calculate Age
+        </button>
+      </form>
+
+      <div id="result">
+        <h1>Your Age:</h1>
+
+        <div class="result">
+          <div class="dob">
+            <p>Years</p>
+            <h1 id="res_year"></h1>
+          </div>
+
+          <div class="dob">
+            <p>Months</p>
+            <h1 id="res_month"></h1>
+          </div>
+
+          <div class="dob">
+            <p>Days</p>
+            <h1 id="res_day"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
